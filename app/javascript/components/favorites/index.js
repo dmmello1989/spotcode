@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import FavoritesService from '../../services/favorites';
-import ResultsTabs from '../common/results_tabs';
+import ResultsTabs from '../common/result_tabs';
 
 const Favorites = () => {
   const [favorites, setFavorites] = useState([]);

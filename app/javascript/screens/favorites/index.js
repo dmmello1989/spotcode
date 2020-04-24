@@ -1,7 +1,7 @@
-import React, { Fragment, useState, useEffect } from 'react';
-import { Heading } from 'react-bulma-components';
+import React, { Fragment } from 'react';
 import NavbarFooter from '../../components/common/navbarFooter';
 import SectionWrapper from '../../components/common/sectionWrapper';
+import { Heading } from 'react-bulma-components';
 import Favorites from '../../components/favorites';
 
 const FavoritesScreen = () => {

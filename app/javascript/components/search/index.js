@@ -4,7 +4,7 @@ import Categories from '../common/categories';
 import { Columns } from 'react-bulma-components';
 import SearchService from '../../services/search';
 import CategoriesService from '../../services/categories';
-import ResultTabs from '../common/result_tabs';
+import ResultsTabs from '../common/result_tabs';
 
 const Search = () => {
   const [albums, setAlbums] = useState([]);
@@ -33,7 +33,7 @@ const Search = () => {
         </Columns.Column>
       </Columns>
 
-      <ResultTabs albums={albums} artists={artists} songs={songs} />
+      <ResultsTabs albums={albums} artists={artists} songs={songs} />
       <Categories fetchCategorySearch={fetchCategorySearch}/>
     </Fragment>
   );
