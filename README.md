@@ -3,7 +3,7 @@
 
 
 ## SpotCode
-SpotCode is a Spotify clone made with Ruby (Back end) and ReactJS (Front end). It allows you to listen to music, browse through albums and artists. Made on Weekcode of OneBitCode.
+SpotCode is a Spotify clone made with Ruby (Back end) and ReactJS (Front end). It allows you to listen to music, browse through albums and artists. Made on Semana Super Full Stack by OneBitCode.
 
 
 ## Technology 
