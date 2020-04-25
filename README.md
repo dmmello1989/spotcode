@@ -10,8 +10,8 @@ SpotCode is a Spotify clone made with Ruby (Back end) and ReactJS (Front end). I
 
 Here are the technologies used in this project.
 
-* Ruby version  2.5.1
-* Rails version 6.0.2
+* Ruby version  2.7.1
+* Rails version 6.0.2.2
 * SQLite3
 
 ## Services Used
