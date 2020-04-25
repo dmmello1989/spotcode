@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { Heading, Columns, Image } from 'react-bulma-components';
 import AlbumsService from '../../services/albums';
 import Musics from '../musics';
@@ -25,7 +25,9 @@ const Albums = () => {
           <Image src={album.cover_url} />
           <S.DivSpaced>
             <Heading size={5} className='has-text-white'>{album.title}</Heading>
-            <Heading size={6} subtitle className='has-text-white'>{album.artist_name}</Heading>
+            <Link to={`/artists/${album.artist_id}`}>
+              <Heading size={6} subtitle className='has-text-white'>{album.artist_name}</Heading>
+            </Link>
           </S.DivSpaced>
         </Columns.Column>
       </Columns>

@@ -1,12 +1,14 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Columns, Tabs } from 'react-bulma-components';
 import Album from '../../common/album';
+import Artist from '../artist';
 import Musics from '../../musics';
 import * as S from './styles';
 
 const ResultsTabs = (props) => {
   const [active_tab, setActiveTab] = useState("albums");
   const [albums, setAlbums] = useState([]);
+  const [artists, setArtists] = useState([]);
 
   const mapAlbums = () => {
     setAlbums(props.albums.map((album, key) =>
@@ -16,9 +18,18 @@ const ResultsTabs = (props) => {
     ));
   }
 
+  const mapArtists = () => {
+    setArtists(props.artists.map((artist, key) =>
+      <Columns.Column desktop={{ size: 3 }} mobile={{ size: 6 }} key={key}>
+        <Artist name={artist.name} photo_url={artist.photo_url} id={artist.id} favorite={artist.favorite}></Artist>
+      </Columns.Column>
+    ));
+  }
+
   useEffect(() => {
     mapAlbums();
-  }, [props.albums]);
+    mapArtists();
+  }, [props]);
 
 
   return (
@@ -46,7 +57,7 @@ const ResultsTabs = (props) => {
 
         <div style={{ display: active_tab != 'artists' ? "none" : "" }}>
           <div className="columns is-mobile is-multiline">
-            Artists
+            {artists}
           </div>
         </div>
 
