@@ -52,9 +52,9 @@ Here are the technologies used in this project.
   - Email: michael@jackson.com password: 123456
   - Email: celine@dion.com password: 123456
   
-* Navigate through the SpotCode's functionalities :)
+* Navigate through SpotCode's functionalities :)
 
 
-  ## Authors
+## Authors
 
-  * **Daniel Morais de Mello** 
+* **Daniel Morais de Mello** 
